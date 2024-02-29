@@ -1,0 +1,121 @@
+/*Mobile First*/
+html {
+    width : fit-content;
+    background : linear-gradient(#18191C, #242424);
+    margin : 0 auto;
+    }
+    body {
+    font-family : Arial, Helvetica, sans-serif;
+    }
+    /* header*/
+    header {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    }
+    .nav {
+    padding-top : 10px;
+    padding-bottom : 10px;
+    color : #ffffff;
+    text-decoration : none;
+    }
+    .nav:hover {
+    color : #6af7fe;
+    font-size : 23px;
+    transition : 1s ease;
+    }
+    /*Menu*/
+    .hero {
+    text-align : center;
+    color : white;
+    margin-top : 55px;
+    margin-bottom : 55px;
+    font-size : 40px;
+    font-weight : 600;
+    }
+    image {
+    justify-self : left;
+    }
+    p {
+    color : white;
+    line-height : 1.5;
+    text-align : left;
+    padding : 24px;
+    font-size : 12px;
+    font-weight : 300;
+    padding-bottom : 10px;
+    }
+    /*footer*/
+    footer {
+    background-color : #000000;
+    color : #2db2c7;
+    font-size : 14px;
+    font-weight : 500;
+    height : max-content;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    }
+    .footer {
+    padding : 12px;
+    }
+    /*Tablet CSS*/
+    @media only screen and (min-width: 768px) {
+    header {
+    flex-direction : row;
+    justify-content : space-around;
+    align-items : start;
+    }
+    .nav {
+    padding-top : 50px;
+    padding-bottom : 50px;
+    }
+    .hero {
+    font-size : 40px;
+    }
+    .seahpic {
+    grid-area : sp;
+    padding-bottom : 555px;
+    }
+    .seahtext {
+    grid-area : st;
+    }
+    .bodycontent {
+    display : grid;
+    grid-template-columns : repeat(2,1fr);
+    grid-template-areas : "sp st";
+    }
+    p {
+    font-size : 14px;
+    }
+    }
+    /*Laptop CSS*/
+    @media only screen and (min-width: 1024px) {
+    header {
+    font-size : 15px;
+    }
+    .nav {
+    padding-top : 50px;
+    padding-bottom : 50px;
+    }
+    .hero {
+    font-size : 90px;
+    }
+    .seahpic {
+    grid-area : sp;
+    padding-left : 55px;
+    padding-bottom : 255px;
+    }
+    .seahtext {
+    grid-area : st;
+    padding-right : 55px;
+    padding-top: 30px;
+    }
+    .bodycontent {
+    display : grid;
+    grid-template-columns : repeat(3,1fr);
+    grid-template-areas : "sp st st ";
+    }
+    p {
+    font-size : 16px;}
+    }

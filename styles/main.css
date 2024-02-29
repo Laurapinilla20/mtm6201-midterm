@@ -1,0 +1,198 @@
+/*Mobile First*/
+html {
+    width : fit-content;
+    background : linear-gradient(#18191C, #242424);
+    margin : 0 auto;
+    }
+    body {
+    font-family : Arial, Helvetica, sans-serif;
+    }
+    /* header*/
+    header {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    }
+    .nav {
+    padding-top : 10px;
+    padding-bottom : 10px;
+    color : #ffffff;
+    text-decoration : none;
+    }
+    .nav:hover {
+    color : #6af7fe;
+    font-size : 23px;
+    transition : 1s ease;
+    }
+      /*Menu*/
+    .hero {
+    text-align : center;
+    color : white;
+    margin-top : 55px;
+    margin-bottom : 55px;
+    font-size : 40px;
+    font-weight : 600;
+    }
+    image {
+    justify-self : left;
+    }
+    h2, p {
+    color : white;
+    line-height : 1.5;
+    text-align : left;
+    padding : 24px;
+    }
+    h2 {
+    font-size : 22px;
+    font-weight : 600;
+    padding-bottom : 10px;
+    text-align : left;
+    }
+    p {
+    font-size : 12px;
+    font-weight : 300;
+    padding-bottom : 10px;
+    }
+    .button {
+    text-decoration : none;
+    font-weight : 700;
+    background-color : #FD9FFD;
+    color : black;
+    font-family : Arial, Helvetica, sans-serif;
+    font-size : 14px;
+    border : none;
+    border-radius : 24px;
+    padding : 6px;
+    padding-left : 20px;
+    padding-right : 20px;
+    margin-bottom : 25px;
+    margin-left : 24px;
+    }
+    .button:hover {
+    box-shadow : 0 3px 5px 0 #4a204a;
+    font-size : 22px;
+    transition : 1s ease;
+    }
+    /*footer*/
+    footer {
+    background-color : #000000;
+    color : #2db2c7;
+    font-size : 14px;
+    font-weight : 500;
+    height : max-content;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    }
+    .footer {
+    padding : 12px;
+    }
+    /*Tablet CSS*/
+    @media only screen and (min-width: 768px) {
+    header {
+    flex-direction : row;
+    justify-content : space-around;
+    align-items : center;
+    }
+    .nav {
+    padding-top : 50px;
+    padding-bottom : 50px;
+    }
+    .hero {
+    font-size : 40px;
+    }
+    .jellypic {
+    grid-area : p;
+    }
+    .jellytext {
+    grid-area : t;
+    }
+    .seahtext {
+    grid-area : st;
+    }
+    .seahpic {
+    grid-area : sp;
+    }
+    .octtext {
+    grid-area : ot;
+    }
+    .octpic {
+    grid-area : op;
+    }
+    .bodycontent {
+    display : grid;
+    grid-template-columns : repeat(4,1fr);
+    grid-template-areas : "p t t t" "sp st st st" "op ot ot ot";
+    }
+    h2 {
+    font-size : 28px;
+    }
+    p {
+    font-size : 14px;
+    }
+    .button {
+    font-size : 18px;
+    margin-top : 50px;
+    display : flex;
+    text-align : center;
+    justify-content : center;
+    }
+    .button:hover {
+    box-shadow : 0 3px 5px 0 #834483;
+    font-size : 22px;
+    transition : 1s ease;
+    }
+    }
+    /*Laptop CSS*/
+    @media only screen and (min-width: 1024px) {
+    header {
+    font-size : 15px;
+    }
+    .nav {
+    padding-top : 50px;
+    padding-bottom : 50px;
+    }
+    .hero {
+    font-size : 50px;
+    }
+    .jellypic {
+    grid-area : p;
+    }
+    .jellytext {
+    grid-area : t;
+    }
+    .seahtext {
+    grid-area : st;
+    }
+    .seahpic {
+    grid-area : sp;
+    }
+    .octtext {
+    grid-area : ot;
+    }
+    .octpic {
+    grid-area : op;
+    }
+    .bodycontent {
+    display : grid;
+    grid-template-columns : repeat(4,1fr);
+    grid-template-areas : "p t t t" "sp st st st " "op ot ot ot";
+    }
+    h2 {
+    font-size : 30px;
+    }
+    p {
+    font-size : 16px;
+    }
+    .button {
+    font-size : 18px;
+    margin-top : 50px;
+    display : flex;
+    text-align : center;
+    justify-content : center;
+    }
+    .button:hover {
+    box-shadow : 0 3px 5px 0 #834483;
+    font-size : 22px;
+    transition : 1s ease;}
+} 
